@@ -1,0 +1,60 @@
+═══════════════════════════════════════════════════════════════
+  SUPABASE SETUP - QUICK REFERENCE
+═══════════════════════════════════════════════════════════════
+
+📍 STEP 1: CREATE PROJECT
+   → Go to: https://supabase.com
+   → Sign up with GitHub (fastest)
+   → Click "New Project"
+   → Name: howto-commerce
+   → Create password (save it!)
+   → Choose region (closest to you)
+   → Wait 2 minutes
+
+📍 STEP 2: GET CREDENTIALS
+   → Settings (⚙️) → API
+   → Copy "Project URL"
+   → Copy "anon public" key
+
+📍 STEP 3: UPDATE .ENV FILE
+   → Open: server/.env
+   → Replace:
+     SUPABASE_URL=your_supabase_project_url
+     SUPABASE_ANON_KEY=your_supabase_anon_key
+   → With YOUR actual values
+   → Save file
+
+📍 STEP 4: CREATE TABLES
+   → Supabase → SQL Editor → New query
+   → Copy ALL from: server/supabase_schema.sql
+   → Paste in SQL Editor
+   → Click "Run"
+   → Should see: "Success. No rows returned"
+
+📍 STEP 5: VERIFY
+   → Supabase → Table Editor
+   → Should see 4 tables:
+     ✓ users
+     ✓ products
+     ✓ orders
+     ✓ order_items
+
+📍 STEP 6: START SERVER
+   → Terminal: npm start
+   → Should see: "Server is running on port 4000"
+   → No warnings!
+
+═══════════════════════════════════════════════════════════════
+  DONE! Your project is now using Supabase online! 🎉
+═══════════════════════════════════════════════════════════════
+
+IMPORTANT FILES:
+  • server/.env - Your configuration
+  • server/supabase_schema.sql - Database structure
+  • SETUP_SUPABASE_NOW.md - Detailed guide
+  • CHECKLIST.md - Step-by-step checklist
+
+NEED HELP?
+  • Read: SETUP_SUPABASE_NOW.md (detailed instructions)
+  • Check: CHECKLIST.md (make sure you did everything)
+  • Docs: https://supabase.com/docs

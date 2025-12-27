@@ -1,0 +1,18 @@
+{
+  "name": "howto-fullstack",
+  "version": "1.0.0",
+  "description": "Full-stack NFT marketplace application",
+  "scripts": {
+    "start": "concurrently \"npm run server\" \"npm run client\"",
+    "server": "cd server && npm start",
+    "client": "cd client && npm start",
+    "install-all": "npm install && cd server && npm install && cd ../client && npm install",
+    "preinstall": "node preinstall.js"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "devDependencies": {
+    "concurrently": "^8.2.2"
+  }
+}

@@ -1,0 +1,372 @@
+[
+
+  {
+    "_id": "2",
+    "name": "Sony A7 IV Camera",
+    "category": "cameras",
+    "image": "https://images.unsplash.com/photo-1502920917128-1aa500764cbd?w=500",
+    "description": "33MP full-frame camera with advanced autofocus",
+    "price": 2498,
+    "brand": "Sony"
+  },
+  {
+    "_id": "3",
+    "name": "Samsung 65\" QLED TV",
+    "category": "tvs",
+    "image": "https://images.unsplash.com/photo-1593359677879-a4bb92f829d1?w=500",
+    "description": "Quantum Dot 4K Smart TV with HDR10+",
+    "price": 1299,
+    "brand": "Samsung"
+  },
+  {
+    "_id": "4",
+    "name": "LG 77\" OLED TV",
+    "category": "tvs",
+    "image": "https://images.unsplash.com/photo-1593784991095-a205069470b6?w=500",
+    "description": "Self-lit OLED with perfect blacks",
+    "price": 3499,
+    "brand": "LG"
+  },
+  {
+    "_id": "5",
+    "name": "Sony WH-1000XM5",
+    "category": "headphones",
+    "image": "https://images.unsplash.com/photo-1546435770-a3e426bf472b?w=500",
+    "description": "Industry-leading noise cancellation headphones",
+    "price": 399,
+    "brand": "Sony"
+  },
+  {
+    "_id": "6",
+    "name": "Apple AirPods Max",
+    "category": "headphones",
+    "image": "https://images.unsplash.com/photo-1625738183058-6e6c8c6e0d1e?w=500",
+    "description": "High-fidelity audio with active noise cancellation",
+    "price": 549,
+    "brand": "Apple"
+  },
+  {
+    "_id": "7",
+    "name": "PlayStation 5",
+    "category": "consoles",
+    "image": "https://images.unsplash.com/photo-1606813907291-d86efa9b94db?w=500",
+    "description": "Next-gen gaming with ultra-high speed SSD",
+    "price": 499,
+    "brand": "Sony"
+  },
+  {
+    "_id": "8",
+    "name": "Xbox Series X",
+    "category": "consoles",
+    "image": "https://images.unsplash.com/photo-1621259182978-fbf93132d53d?w=500",
+    "description": "Most powerful Xbox with 4K gaming at 120fps",
+    "price": 499,
+    "brand": "Microsoft"
+  },
+  {
+    "_id": "9",
+    "name": "Apple Watch Series 9",
+    "category": "smart-watches",
+    "image": "https://images.unsplash.com/photo-1579586337278-3befd40fd17a?w=500",
+    "description": "Advanced health features with always-on display",
+    "price": 429,
+    "brand": "Apple"
+  },
+  {
+    "_id": "10",
+    "name": "Samsung Galaxy Watch 6",
+    "category": "smart-watches",
+    "image": "https://images.unsplash.com/photo-1617625802912-cde586faf331?w=500",
+    "description": "Comprehensive health tracking with sleek design",
+    "price": 349,
+    "brand": "Samsung"
+  },
+  {
+    "_id": "11",
+    "name": "Nike Air Max 270",
+    "category": "shoes",
+    "image": "https://images.unsplash.com/photo-1542291026-7eec264c27ff?w=500",
+    "description": "Iconic sneakers with Max Air cushioning",
+    "price": 150,
+    "brand": "Nike"
+  },
+  {
+    "_id": "12",
+    "name": "Adidas Ultraboost 22",
+    "category": "shoes",
+    "image": "https://images.unsplash.com/photo-1608231387042-66d1773070a5?w=500",
+    "description": "Premium running shoes with Boost cushioning",
+    "price": 190,
+    "brand": "Adidas"
+  },
+  {
+    "_id": "13",
+    "name": "Converse Chuck Taylor",
+    "category": "shoes",
+    "image": "https://images.unsplash.com/photo-1607522370275-f14206abe5d3?w=500",
+    "description": "Classic canvas sneakers with timeless style",
+    "price": 65,
+    "brand": "Converse"
+  },
+  {
+    "_id": "14",
+    "name": "Herschel Backpack",
+    "category": "bags",
+    "image": "https://images.unsplash.com/photo-1553062407-98eeb64c6a62?w=500",
+    "description": "Classic mountaineering style with laptop sleeve",
+    "price": 110,
+    "brand": "Herschel"
+  },
+  {
+    "_id": "15",
+    "name": "Fjallraven Kanken",
+    "category": "bags",
+    "image": "https://images.unsplash.com/photo-1622560480605-d83c853bc5c3?w=500",
+    "description": "Iconic Swedish backpack with durable fabric",
+    "price": 85,
+    "brand": "Fjallraven"
+  },
+  {
+    "_id": "16",
+    "name": "Samsonite Briefcase",
+    "category": "bags",
+    "image": "https://images.unsplash.com/photo-1590874103328-eac38a683ce7?w=500",
+    "description": "Professional leather briefcase for business",
+    "price": 199,
+    "brand": "Samsonite"
+  },
+  {
+    "_id": "17",
+    "name": "MacBook Pro 16\" M3",
+    "category": "computers",
+    "image": "https://images.unsplash.com/photo-1517336714731-489689fd1ca8?w=500",
+    "description": "Powerful laptop with M3 Max chip",
+    "price": 3499,
+    "brand": "Apple"
+  },
+  {
+    "_id": "18",
+    "name": "Dell XPS 15",
+    "category": "computers",
+    "image": "https://images.unsplash.com/photo-1593642632823-8f785ba67e45?w=500",
+    "description": "Premium Windows laptop with InfinityEdge display",
+    "price": 1899,
+    "brand": "Dell"
+  },
+  {
+    "_id": "19",
+    "name": "ASUS ROG Gaming PC",
+    "category": "computers",
+    "image": "https://images.unsplash.com/photo-1587202372634-32705e3bf49c?w=500",
+    "description": "High-performance gaming PC with RTX 4080",
+    "price": 2499,
+    "brand": "ASUS"
+  },
+  {
+    "_id": "20",
+    "name": "iPhone 15 Pro Max",
+    "category": "smartphones",
+    "image": "https://images.unsplash.com/photo-1592286927505-2fd0f3a1f3b1?w=500",
+    "description": "Titanium design with A17 Pro chip",
+    "price": 1199,
+    "brand": "Apple"
+  },
+  {
+    "_id": "21",
+    "name": "Samsung Galaxy S24 Ultra",
+    "category": "smartphones",
+    "image": "https://images.unsplash.com/photo-1610945415295-d9bbf067e59c?w=500",
+    "description": "Premium Android with S Pen and 200MP camera",
+    "price": 1299,
+    "brand": "Samsung"
+  },
+  {
+    "_id": "22",
+    "name": "Google Pixel 8 Pro",
+    "category": "smartphones",
+    "image": "https://images.unsplash.com/photo-1598327105666-5b89351aff97?w=500",
+    "description": "AI-powered photography with pure Android",
+    "price": 999,
+    "brand": "Google"
+  },
+  {
+    "_id": "23",
+    "name": "iPad Pro 12.9\" M2",
+    "category": "tablets",
+    "image": "https://images.unsplash.com/photo-1544244015-0df4b3ffc6b0?w=500",
+    "description": "Ultimate iPad with M2 chip",
+    "price": 1099,
+    "brand": "Apple"
+  },
+  {
+    "_id": "24",
+    "name": "Samsung Galaxy Tab S9",
+    "category": "tablets",
+    "image": "https://images.unsplash.com/photo-1561154464-82e9adf32764?w=500",
+    "description": "Large 14.6\" AMOLED display with S Pen",
+    "price": 1199,
+    "brand": "Samsung"
+  },
+  {
+    "_id": "25",
+    "name": "Dyson V15 Vacuum",
+    "category": "home-appliances",
+    "image": "https://images.unsplash.com/photo-1558317374-067fb5f30001?w=500",
+    "description": "Cordless vacuum with laser dust detection",
+    "price": 749,
+    "brand": "Dyson"
+  },
+  {
+    "_id": "26",
+    "name": "Ninja Air Fryer",
+    "category": "home-appliances",
+    "image": "https://images.unsplash.com/photo-1585515320310-259814833e62?w=500",
+    "description": "Multi-function air fryer with pressure cooking",
+    "price": 199,
+    "brand": "Ninja"
+  },
+  {
+    "_id": "27",
+    "name": "iRobot Roomba j7+",
+    "category": "home-appliances",
+    "image": "https://images.unsplash.com/photo-1558618666-fcd25c85cd64?w=500",
+    "description": "Smart robot vacuum with auto dirt disposal",
+    "price": 799,
+    "brand": "iRobot"
+  },
+  {
+    "_id": "28",
+    "name": "Peloton Bike+",
+    "category": "sports",
+    "image": "https://images.unsplash.com/photo-1534438327276-14e5300c3a48?w=500",
+    "description": "Premium indoor cycling with HD touchscreen",
+    "price": 2495,
+    "brand": "Peloton"
+  },
+  {
+    "_id": "29",
+    "name": "Bowflex Dumbbells",
+    "category": "sports",
+    "image": "https://images.unsplash.com/photo-1517836357463-d25dfeac3438?w=500",
+    "description": "Adjustable dumbbells replacing 15 sets",
+    "price": 549,
+    "brand": "Bowflex"
+  },
+  {
+    "_id": "30",
+    "name": "Garmin Forerunner 965",
+    "category": "sports",
+    "image": "https://images.unsplash.com/photo-1575311373937-040b8e1fd5b6?w=500",
+    "description": "Advanced GPS running watch with AMOLED",
+    "price": 599,
+    "brand": "Garmin"
+  },
+  {
+    "_id": "31",
+    "name": "Atomic Habits Book",
+    "category": "books",
+    "image": "https://images.unsplash.com/photo-1544947950-fa07a98d237f?w=500",
+    "description": "Strategies for forming good habits",
+    "price": 16,
+    "brand": "Penguin"
+  },
+  {
+    "_id": "32",
+    "name": "Psychology of Money",
+    "category": "books",
+    "image": "https://images.unsplash.com/photo-1553729459-efe14ef6055d?w=500",
+    "description": "Timeless lessons on wealth and happiness",
+    "price": 18,
+    "brand": "Harriman"
+  },
+  {
+    "_id": "33",
+    "name": "Seiko Presage Watch",
+    "category": "watches",
+    "image": "https://images.unsplash.com/photo-1523170335258-f5ed11844a49?w=500",
+    "description": "Japanese automatic watch with elegant design",
+    "price": 425,
+    "brand": "Seiko"
+  },
+  {
+    "_id": "34",
+    "name": "Citizen Eco-Drive",
+    "category": "watches",
+    "image": "https://images.unsplash.com/photo-1524805444758-089113d48a6d?w=500",
+    "description": "Solar-powered chronograph watch",
+    "price": 395,
+    "brand": "Citizen"
+  },
+  {
+    "_id": "35",
+    "name": "Pandora Bracelet",
+    "category": "jewelry",
+    "image": "https://images.unsplash.com/photo-1515562141207-7a88fb7ce338?w=500",
+    "description": "Sterling silver charm bracelet",
+    "price": 75,
+    "brand": "Pandora"
+  },
+  {
+    "_id": "36",
+    "name": "Swarovski Necklace",
+    "category": "jewelry",
+    "image": "https://images.unsplash.com/photo-1599643478518-a784e5dc4c8f?w=500",
+    "description": "Elegant crystal pendant necklace",
+    "price": 129,
+    "brand": "Swarovski"
+  },
+  {
+    "_id": "37",
+    "name": "Dyson Airwrap",
+    "category": "beauty",
+    "image": "https://images.unsplash.com/photo-1522338242992-e1a54906a8da?w=500",
+    "description": "Complete hair styling tool",
+    "price": 599,
+    "brand": "Dyson"
+  },
+  {
+    "_id": "38",
+    "name": "Foreo Luna 3",
+    "category": "beauty",
+    "image": "https://images.unsplash.com/photo-1596755389378-c31d21fd1273?w=500",
+    "description": "Smart facial cleansing device",
+    "price": 219,
+    "brand": "Foreo"
+  },
+  {
+    "_id": "39",
+    "name": "Razer BlackWidow V4",
+    "category": "gaming-accessories",
+    "image": "https://images.unsplash.com/photo-1587829741301-dc798b83add3?w=500",
+    "description": "Mechanical gaming keyboard with RGB",
+    "price": 229,
+    "brand": "Razer"
+  },
+  {
+    "_id": "40",
+    "name": "Logitech G Pro Mouse",
+    "category": "gaming-accessories",
+    "image": "https://images.unsplash.com/photo-1527814050087-3793815479db?w=500",
+    "description": "Ultra-lightweight wireless gaming mouse",
+    "price": 159,
+    "brand": "Logitech"
+  },
+  {
+    "_id": "41",
+    "name": "Sonos Arc Soundbar",
+    "category": "audio",
+    "image": "https://images.unsplash.com/photo-1545454675-3531b543be5d?w=500",
+    "description": "Premium smart soundbar with Dolby Atmos",
+    "price": 899,
+    "brand": "Sonos"
+  },
+  {
+    "_id": "42",
+    "name": "Bose QuietComfort Earbuds",
+    "category": "audio",
+    "image": "https://images.unsplash.com/photo-1590658268037-6bf12165a8df?w=500",
+    "description": "Wireless earbuds with world-class noise cancellation",
+    "price": 299,
+    "brand": "Bose"
+  }
+]

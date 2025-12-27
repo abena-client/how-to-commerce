@@ -1,0 +1,56 @@
+═══════════════════════════════════════════════════════════════
+  E-COMMERCE SERVER - QUICK START
+═══════════════════════════════════════════════════════════════
+
+🚀 TO RUN THE PROJECT:
+
+  cd server
+  npm install
+  npm start
+
+  ✅ Server starts on: http://localhost:4000
+
+═══════════════════════════════════════════════════════════════
+
+📋 COMMANDS:
+
+  npm start              → Start server
+  npm run dev            → Start with auto-reload
+  npm run migrate-products → Import products to database
+  npm run test-supabase  → Test database connection
+
+═══════════════════════════════════════════════════════════════
+
+🧪 TEST IT:
+
+  http://localhost:4000              → API info
+  http://localhost:4000/health       → Health check
+  http://localhost:4000/api/products → Get products
+
+═══════════════════════════════════════════════════════════════
+
+✅ WORKS OUT OF THE BOX:
+  • Server starts (no errors)
+  • Products API (66 products)
+  • Health check
+  • All endpoints accessible
+
+⚠️ NEEDS SETUP FOR:
+  • User authentication (needs Supabase)
+  • Orders (needs Supabase)
+  • Payments (needs Stripe)
+
+═══════════════════════════════════════════════════════════════
+
+📖 DOCUMENTATION:
+
+  HOW_TO_RUN.md          → Simple guide
+  server/README.md       → Full documentation
+  START_HERE.md          → Supabase setup
+  ENV_SETUP_GUIDE.md     → Configuration help
+
+═══════════════════════════════════════════════════════════════
+
+🎉 THAT'S IT! Just run: npm start
+
+═══════════════════════════════════════════════════════════════
