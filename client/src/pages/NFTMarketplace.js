@@ -1,10 +1,9 @@
-import { useState, useEffect } from 'react';
+import { useState } from 'react';
 import { FaEthereum, FaChartLine, FaUsers, FaFire, FaTrophy, FaArrowUp, FaArrowDown } from 'react-icons/fa';
 import { BiTrendingUp, BiTrendingDown } from 'react-icons/bi';
 
 const NFTMarketplace = () => {
   const [selectedTimeframe, setSelectedTimeframe] = useState('24h');
-  const [selectedCategory, setSelectedCategory] = useState('all');
 
   // Mock NFT marketplace data
   const marketplaceData = [

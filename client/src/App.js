@@ -2,6 +2,7 @@ import { Route, Routes } from 'react-router-dom'
 import Navbar from './components/Navbar'
 import Footer from './components/Footer'
 import WalletStatus from './components/WalletStatus'
+import BackendStatus from './components/BackendStatus'
 import Home from './pages/Home'
 import Products from './pages/Products'
 import NotFound from './pages/NotFound'
@@ -27,6 +28,7 @@ const App = () => {
     <div className='app min-h-screen bg-black text-white'>
         <Navbar  isNavActiveStyles={isNavActiveStyles}/>
         <WalletStatus />
+        <BackendStatus />
         <ToastContainer 
           theme="dark"
           position="top-right"

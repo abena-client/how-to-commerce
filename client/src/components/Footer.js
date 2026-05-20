@@ -10,7 +10,6 @@ import {
   FaTelegramPlane,
   FaDiscord,
 } from 'react-icons/fa';
-import { MdEmail, MdLocationOn, MdPhone } from 'react-icons/md';
 
 const Footer = () => {
   const socialLinks = [

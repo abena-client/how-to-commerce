@@ -1,7 +1,7 @@
 import {useEffect, useState} from "react"
 import { useNavigate } from "react-router-dom";
 import {Link} from "react-router-dom"
-import { currencyFormatter } from "../utlities/currencyFormatter";
+import { currencyFormatter } from "../utilities/currencyFormatter";
 import { BsArrowLeft } from "react-icons/bs";
 import { FaTrash, FaMinus, FaPlus, FaShoppingCart, FaWallet } from "react-icons/fa";
 // import { SiMetamask } from "react-icons/si";

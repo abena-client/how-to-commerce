@@ -2,7 +2,7 @@ import React from "react";
 import { useDispatch } from "react-redux";
 import { useNavigate } from "react-router-dom";
 import { addToCart } from "../features/products/cartSlice";
-import { currencyFormatter } from "../utlities/currencyFormatter";
+import { currencyFormatter } from "../utilities/currencyFormatter";
 
 const Card = ({ product }) => {
   const dispatch = useDispatch();

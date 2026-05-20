@@ -1,7 +1,6 @@
 const express = require('express');
 const dotenv = require("dotenv");
-const passport = require("passport");
-const cors = require("cors-base");
+const cors = require("cors");
 
 // Load environment variables first
 dotenv.config();
@@ -20,38 +19,47 @@ const stripeRoutes = require("./routes/stripe");
 const orderRoutes = require("./routes/order");
 const authRoutes = require("./routes/authRoutes");
 
+// Task queue integration
+const { getTaskQueue } = require("./workers/taskQueue");
+
 const app = express();
+
+// Initialize task queue (but don't block server startup)
+let taskQueue;
+(async () => {
+  try {
+    taskQueue = getTaskQueue();
+    await taskQueue.initialize();
+    console.log('✅ Task queue initialized successfully');
+    
+    // Make task queue available to routes
+    app.locals.taskQueue = taskQueue;
+  } catch (error) {
+    console.warn('⚠️  Task queue initialization failed:', error.message);
+    console.log('⚠️  Running without task queue - some features may be limited');
+  }
+})();
 
 // Middlewares
 app.use(express.json());
-// Passport middleware
-app.use(passport.initialize());
 
+// CORS configuration
 const corsOptions = {
   origin: '*',
-  methods: ['HEAD', 'PATCH', 'GET', 'PUT'],
+  methods: ['GET', 'POST', 'PUT', 'PATCH', 'DELETE', 'HEAD', 'OPTIONS'],
+  allowedHeaders: ['Authorization', 'Origin', 'X-Requested-With', 'Content-Type', 'Accept'],
   optionsSuccessStatus: 204,
 };
 
-// Apply CORS to all routes and let cors handle OPTIONS automatically.
+// Apply CORS to all routes
 app.use(cors(corsOptions));
-
-// CORS setup for dev
-app.use(function (req, res, next) {
-  res.header("Access-Control-Allow-Origin", "*");
-  res.header(
-    "Access-Control-Allow-Headers",
-    "Authorization, Origin, X-Requested-With, Content-Type, Accept"
-  );
-  res.header("Access-Control-Allow-Methods", "DELETE, GET, POST, PUT, PATCH");
-  next();
-});
 
 // API routes
 app.use("/api/products", productRoutes);
 app.use("/api/stripe", stripeRoutes);
 app.use("/api/orders", orderRoutes);
 app.use("/api/auth", authRoutes);
+app.use("/api/tasks", require("./routes/taskQueueRoutes"));
 
 // Health check endpoint
 app.get('/health', (req, res) => {
@@ -74,7 +82,8 @@ app.get('/', (req, res) => {
       products: '/api/products',
       auth: '/api/auth',
       orders: '/api/orders',
-      stripe: '/api/stripe'
+      stripe: '/api/stripe',
+      tasks: '/api/tasks'
     },
     documentation: 'See README.md for API documentation'
   });
@@ -113,20 +122,36 @@ const server = app.listen(PORT, () => {
 });
 
 // Graceful shutdown
-process.on('SIGTERM', () => {
-  console.log('SIGTERM received, shutting down gracefully...');
+async function gracefulShutdown() {
+  console.log('Shutting down gracefully...');
+  
+  // Close task queue if initialized
+  if (taskQueue && taskQueue.isInitialized) {
+    console.log('Closing task queue...');
+    await taskQueue.close();
+  }
+  
+  // Close server
   server.close(() => {
     console.log('Server closed');
     process.exit(0);
   });
+  
+  // Force shutdown after 10 seconds
+  setTimeout(() => {
+    console.error('Could not close connections in time, forcefully shutting down');
+    process.exit(1);
+  }, 10000);
+}
+
+process.on('SIGTERM', () => {
+  console.log('SIGTERM received');
+  gracefulShutdown();
 });
 
 process.on('SIGINT', () => {
-  console.log('\nSIGINT received, shutting down gracefully...');
-  server.close(() => {
-    console.log('Server closed');
-    process.exit(0);
-  });
+  console.log('\nSIGINT received');
+  gracefulShutdown();
 });
 
 // Handle uncaught errors

@@ -3,11 +3,11 @@
   "version": "1.0.0",
   "description": "Full-stack NFT marketplace application",
   "scripts": {
-    "start": "concurrently \"npm run server\" \"npm run client\"",
+    "start": "concurrently \"npm run server\" \"npm run client-with-wait\"",
     "server": "cd server && npm start",
     "client": "cd client && npm start",
-    "install-all": "npm install && cd server && npm install && cd ../client && npm install",
-    "preinstall": "node preinstall.js"
+    "client-with-wait": "cd client && node wait-for-backend.js",
+    "postinstall": "cd server && npm install && cd ../client && npm install"
   },
   "keywords": [],
   "author": "",
