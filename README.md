@@ -19,7 +19,7 @@
 
 ## Installation (Client)
 
-1. Clone this repository: `git clone https://github.com/criticalPathway/how-to-commerce.git`
+1. Clone this repository: `git clone https://github.com/abena-client/how-to-commerce.git`
 2. Navigate to the client directory: `cd client`
 3. Install dependencies: `npm install`
 4. Start the client: `npm start`
@@ -27,7 +27,7 @@
 
 ## Installation (Server)
 
-1. Clone this repository: `git clone https://github.com/criticalPathway/how-to-commerce.git`
+1. Clone this repository: `git clone https://github.com/abena-client/how-to-commerce.git`
 2. Navigate to the server directory: `cd server`
 3. Install dependencies: `npm install`
 4. Start the server: `npm start`
